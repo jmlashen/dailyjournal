@@ -1,0 +1,7 @@
+
+
+form.main-form fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,44 @@
     <title>Journal</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
-    <h2>Daily Journal</h2>
-    <form action="">
-        <fieldset>
-            <label for="journalDate">Date of entry</label>
-            <input type="date" name="journalDate" id="jorunalDate">
-        </fieldset>
-        <fieldset>
-            <label for="journalDate">Date of entry</label>
-            <input type="date" name="journalDate" id="jorunalDate">
-        </fieldset>
-        <fieldset>
-            <label for="journalDate">Date of entry</label>
-            <input type="date" name="journalDate" id="jorunalDate">
-        </fieldset>
-        <fieldset>
-            <label for="journalDate">Date of entry</label>
-            <input type="date" name="journalDate" id="jorunalDate">
-        </fieldset>
-    </form>
-<header>
-</header>
-<main>
-</main>
-<footer>
-</footer>
+
+    <header>
+        <h2>Daily Journal</h2>
+    </header>
+    <main>
+        <form class="main-form" action="">
+            <fieldset>
+                <label for="journalDate">Date of entry</label>
+                <input type="date" name="journalDate" id="journalDate">
+            </fieldset>
+
+            <fieldset>
+                <label for="conceptsCovered">Concepts Covered</label>
+                <input type="text" name="conceptsCovered" id="conceptsCovered">
+            </fieldset>
+
+            <fieldset>
+                <label for="journalEntry">Journal Entry</label>
+                <textarea id="journalEntry" name="journalEntry" cols="20" rows="1"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label for="mood">Mood</label>
+                <select name="mood" id="mood">
+                    <option value="happy">Happy</option>
+                    <option value="sad">Sad</option>
+                    <option value="tired">Tired</option>
+                    <option value="soggy">Soggy</option>
+                    <option value="excited">Excited</option>
+                    <option value="bored">Bored</option>
+                </select>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+    </footer>
 </body>
+
 </html>
