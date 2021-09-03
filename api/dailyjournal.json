@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jacob Lesniack"
+    },
+    {
+      "id": 2,
+      "name": "Tessema Fuchere"
+    },
+    {
+      "name": "Reed Parker",
+      "id": 3
+    }
+  ],
+  "journal-entries": [
+    {
+      "id": 1,
+      "concepts_covered": "varchar",
+      "date_of_entry": 1630525094654,
+      "userid": 1,
+      "moodid": "int"
+    },
+    {
+      "id": 2,
+      "concepts_covered": "varchar",
+      "date_of_entry": "timestamp",
+      "userid": 2,
+      "moodid": "int"
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "mood": "varchar"
+    }
+  ]
+}
