@@ -1,0 +1,20 @@
+/* form.main-form fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #F6D674;
+} */
+
+body {
+    background-color: #E67D79;
+}
+.formsSection {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.newPost{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #F6D674;
+}
