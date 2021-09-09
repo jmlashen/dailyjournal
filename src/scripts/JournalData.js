@@ -35,10 +35,10 @@ const journal = [
     You export a function that provides a version of the
     raw data in the format that you want
 */
-export const getJournalEntries = () => {
-    const sortedByDate = journal.sort(
-        (currentEntry, nextEntry) =>
-            Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
-    )
-    return sortedByDate
-}
+// export const getJournalEntries = () => {
+//     const sortedByDate = journal.sort(
+//         (currentEntry, nextEntry) =>
+//             Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
+//     )
+//     return sortedByDate
+// }
