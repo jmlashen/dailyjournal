@@ -1,6 +1,8 @@
-import { getJournalEntries, createJournalEntry } from "./DataManager.js"
-import { EntryListComponent } from "./JournalEntryList.js"
-import { PostEntry } from "./JournalEntry.js";
+import { getJournalEntries, createJournalEntry, deleteEntry } from "./data/DataManager.js"
+import { EntryListComponent } from "./feed/JournalEntryList.js"
+import { PostEntry } from "./feed/JournalEntry.js";
+
+
 
 
 
@@ -10,6 +12,7 @@ import { PostEntry } from "./JournalEntry.js";
     const entryElement = document.querySelector(".entryForm");
     entryElement.innerHTML = PostEntry();
   }
+
   
   
 const showJournalEntries = () => {
@@ -24,6 +27,7 @@ const showJournalEntries = () => {
 }
 
 const applicationElement = document.querySelector(".entryForm")
+const entryLogElement = document.querySelector("#entryLog")
 
 applicationElement.addEventListener("click", event => {
     event.preventDefault();
@@ -54,10 +58,23 @@ applicationElement.addEventListener("click", event => {
         });
     }
   })
+
+  entryLogElement.addEventListener("click", event => {
+    event.preventDefault();
+    console.log(event.target.id)
+    if (event.target.id.startsWith("delete")) {
+      const postId = event.target.id.split("--")[1];
+      deleteEntry(postId)
+        .then(response => {
+          showJournalEntries();
+        })
+    }
+  })
+
+  
 showJournalEntries();
 showPostEntry();
 
-
-
+  
 
 

@@ -1,7 +1,7 @@
 
 // this function fetches all the entries 
 export const getJournalEntries = () => {
-    return fetch("http://localhost:8088/journal-entries")
+    return fetch("http://localhost:8089/journal-entries")
         .then(response => response.json())
 }
 
@@ -11,7 +11,7 @@ export const getJournalEntries = () => {
 
 
 export const createJournalEntry = postObj => {
-    return fetch("http://localhost:8088/journal-entries", {
+    return fetch("http://localhost:8089/journal-entries", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -21,4 +21,15 @@ export const createJournalEntry = postObj => {
     })
         .then(response => response.json())
   }
+
+  export const deleteEntry = postId => {
+    return fetch(`http://localhost:8089/journal-entries/${postId}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json"
+        }
   
+    })
+        .then(response => response.json())
+        
+  }

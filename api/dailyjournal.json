@@ -13,36 +13,7 @@
       "id": 3
     }
   ],
-  "journal-entries": [
-    {
-      "id": 1,
-      "date": "08/31/2021",
-      "concept": "api",
-      "entry": "Introduced api's and .json server",
-      "mood": "Good"
-    },
-    {
-      "id": 2,
-      "date": "09/01/2021",
-      "concept": "Postman and dbDigagram",
-      "entry": "I managed to keep up all day but looking forward to more practice with these concepts",
-      "mood": "Good"
-    },
-    {
-      "id": 3,
-      "date": "09/02/2021",
-      "concept": "Data Manager",
-      "entry": "New Concept",
-      "mood": "Excited"
-    },
-    {
-      "date": 1631218587224,
-      "concept": "jasjs",
-      "entry": "hjashj",
-      "mood": "happy",
-      "id": 4
-    }
-  ],
+  "journal-entries": [],
   "moods": [
     {
       "id": 1,
