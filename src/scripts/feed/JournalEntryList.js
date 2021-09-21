@@ -18,6 +18,6 @@ export const EntryListComponent = (allEntries) => {
     journalHtmlRep += JournalEntryComponent(entry)
         
     } 
-    entryLog.innerHTML += journalHtmlRep
+    entryLog.innerHTML = journalHtmlRep
 }
 
